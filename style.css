@@ -1,0 +1,429 @@
+/*************************************
+SETUP / MOCK SITE GLOBALS
+*************************************/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "TiemposText-Regular", "Neuton", Times, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+body {
+  color: dimgray;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #e51b24;
+  text-decoration: none;
+}
+
+.headline {
+  font-family: "TiemposHeadlineWeb-Bold", "Neuton", Times, "Times New Roman", serif;
+  font-size: 31px;
+  line-height: 40px;
+  text-transform: normal;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 768px) {
+  .headline {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+
+.headline-md {
+  font-family: "TiemposHeadlineWeb-Bold", Times, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 29px;
+  color: #111;
+  text-transform: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 1025px) {
+  .headline-md {
+    font-size: 30px;
+    line-height: 41px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 10px 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px 10px;
+  }
+}
+
+.careers-intro {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.careers-outro {
+  float: left;
+  display: block;
+  margin-right: 1.66113%;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 1025px) {
+  .careers-outro {
+    float: left;
+    display: block;
+    margin-right: 1.66113%;
+    width: 49.16944%;
+  }
+}
+
+/*************************************
+COMPONENT: FILTERED GRID
+*************************************/
+.gsf-filtered-grid {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gsf-filtered-grid > li {
+  transition: all 0.4s;
+  transform: translateZ(0);
+}
+
+.gsf-filtered-grid .gsf-filtered-grid-move {
+  transition: transform 0.4s 0.1s;
+}
+
+.gsf-filtered-grid .gsf-filtered-grid-enter,
+.gsf-filtered-grid .gsf-filtered-grid-leave-to {
+  opacity: 0;
+  transform: translate3d(0, 120px, 0);
+}
+
+.gsf-filtered-grid .gsf-filtered-grid-leave-active {
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .gsf-filtered-grid {
+    width: 66.66%;
+    z-index: 5;
+    float: left;
+  }
+}
+
+/*************************************
+COMPONENT: FILTER LIST
+*************************************/
+.gsf-filters {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+  bottom: calc(-50vh + 59px);
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  padding: 0;
+  background-color: #f7f7f7;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gsf-mobile-filters-drawer {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  height: 60px;
+  flex: 0 0 60px;
+  width: 100%;
+  padding: 0 25px;
+  border-top: 1px solid rgba(0,0,0,0.30);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gsf-mobile-filters-open {
+  transform: translate3d(0, -100%, 0) translate3d(0, 59px, 0);
+}
+
+.gsf-mobile-filters-open .gsf-mobile-filters-drawer {
+  border-top: none;
+}
+
+.gsf-mobile-filters-open .gsf-mobile-filters-drawer:after {
+  content: '';
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  width: calc(100% - 50px);
+  border-bottom: 1px solid rgba(0,0,0,0.30);
+}
+
+.gsf-mobile-filters-heading {
+  font-family: "Gotham SSm A", "Gotham SSm B", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  color: rgba(0,0,0,0.30);
+}
+
+.gsf-mobile-filters-selected {
+  font-family: "Gotham SSm A", "Gotham SSm B", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0,0,0,0.30);
+}
+
+.gsf-filter-list-wrap {
+  flex: 1 1 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.gsf-filter-list {
+  display: block;
+  list-style: none;
+  margin: -0.65rem 0 0;
+  font-size: 14px;
+  padding: 40px 43px 10px;
+}
+
+.gsf-filter-list li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+.gsf-filter-list a {
+  font-family: "Gotham SSm A", "Gotham SSm B", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgba(0,0,0,0.30);
+  display: block;
+  width: 100%;
+  padding: 0.65rem 0;
+  transition: color 0.2s ease;
+}
+
+.gsf-filter-list a span {
+  position: relative;
+  display: inline-block;
+}
+
+.gsf-filter-list .gsf-filter-active {
+  font-weight: 600;
+  color: #111111;
+}
+
+@media (min-width: 768px) {
+  .gsf-filters {
+    position: relative;
+    display: block;
+    z-index: initial;
+    left: initial;
+    bottom: initial;
+    float: left;
+    width: 33.33%;
+    height: auto;
+    padding: 0 20px 110px;
+    background: transparent;
+  }
+
+  @supports (position:sticky) {
+    .gsf-filters {
+      position: sticky;
+      top: 150px;
+    }
+  }
+
+  .gsf-filters-backdrop:before {
+    content: '';
+    position: absolute;
+    left: -45px;
+    top: -55px;
+    z-index: -5;
+    width: calc(125% + 45px);
+    height: calc(75% + 55px);
+    box-shadow: 0 40px 75px 0 rgba(0, 0, 0, 0.51);
+    border-radius: 100px;
+  }
+
+  .gsf-filters-backdrop:after {
+    content: '';
+    position: absolute;
+    left: -90px;
+    top: -110px;
+    z-index: -2;
+    width: calc(140% + 90px);
+    height: calc(100% + 110px);
+    background: #f7f7f7;
+  }
+
+  .gsf-mobile-filters-drawer {
+    display: none;
+  }
+
+  .gsf-mobile-filters-open {
+    transform: none;
+  }
+
+  .gsf-filter-list a span:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: -14px;
+    width: calc(100% + 28px);
+    height: 6px;
+    background: #FFD000;
+    transform-origin: 0 100%;
+    transform: scale3d(0, 0.33, 1);
+    transition: all 0.2s ease;
+  }
+
+  .gsf-filter-list a:hover span:after {
+    transform: scale3d(1, 0.33, 1);
+  }
+
+  .gsf-filter-list .gsf-filter-active span:after,
+  .gsf-filter-list .gsf-filter-active:hover span:after {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*************************************
+COMPONENT: CAREER LISTING
+*************************************/
+.gsf-career-listing {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.gsf-career-listing:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.10);
+  opacity: 1;
+  transition: opacity 0.4s;
+}
+
+.gsf-career-listing-inner {
+  position: relative;
+  display: block;
+  padding: 40px 20px;
+  text-decoration: none;
+}
+
+.gsf-career-listing-last:after {
+  opacity: 0;
+}
+
+.gsf-career-title {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  letter-spacing: 0.05em;
+  color: #111111;
+}
+
+.gsf-career-title:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 1px;
+  left: -14px;
+  width: calc(100% + 28px);
+  height: 6px;
+  background: #FFD000;
+  transition: all 0.2s ease;
+  transform-origin: 0 100%;
+  transform: scale3d(0, 1, 1);
+}
+
+.gsf-career-description {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "TiemposText-Regular", "Neuton", Times, "Times New Roman", serif;
+  color: #777;
+}
+
+@media (min-width: 768px) {
+  .gsf-career-listing a {
+    padding: 40px 100px;
+  }
+  .gsf-career-listing-inner:hover .gsf-career-title:after {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*************************************
+MAIN
+*************************************/
+.careers-main {
+  position: relative;
+  padding: 0;
+}
+
+.careers-main:after,
+.careers-main:before {
+  content: " ";
+  display: table;
+}
+
+.careers-main:after {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .careers-main {
+    padding-top: 85px;
+  }
+
+  .careers-main .gsf-filter-list {
+    padding-top: 40px;
+  }
+}
