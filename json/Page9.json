@@ -1,0 +1,48 @@
+{
+  "title": "Information Technology Coordinator",
+  "summary": "Information Technology Coordinator for an NGO (Non-Governmental Organization), your role is crucial in ensuring the smooth functioning of technology-related operations within the organization and ensuring the effective and efficient use of technology within the NGO, enabling the organization to fulfill its mission and serve its beneficiaries more effectively. It is a Permanent-Type Position.",
+  "category": "NGO Role"
+},
+{
+  "title": "Roles",
+  "summary": "Technology Infrastructure Management, IT Support, Data Management and Security, IT Procurement, Technology Planning and Strategy, Data Backup and Disaster Recovery, Training and User Education, IT Policy and Compliance, IT Budgeting and Asset Management, Stay Updated on Technology Trends, IT Documentation",
+  "category": "Responsibilities"
+},
+{
+  "title": "Responsibilities",
+  "category": "Responsibilities",
+  "subsections": [
+    {
+      "title": "IT Infrastructure Management",
+      "summary": "The IT Coordinator is responsible for managing and maintaining the organization's IT infrastructure, including hardware, software, networks, servers, and databases. They ensure that systems are up-to-date, secure, and functioning efficiently."
+    },
+    {
+      "title": "Technical Support",
+      "summary": "The IT Coordinator provides technical support to employees or end-users. They troubleshoot and resolve hardware and software issues, assist with user account management, and respond to IT-related inquiries or helpdesk tickets."
+    },
+    {
+      "title": "IT Project Coordination",
+      "summary": "They coordinate and manage IT projects, including system upgrades, installations, and migrations. This involves creating project plans, setting timelines, assigning tasks to team members, and ensuring projects are completed on schedule and within budget."
+    },
+    {
+      "title": "IT Policies and Procedures",
+      "summary": "The IT Coordinator helps develop and enforce IT policies, procedures, and guidelines. They ensure compliance with security protocols, data privacy regulations, and best practices. They may also conduct training sessions or workshops to educate employees on IT policies and cybersecurity awareness."
+    },
+    {
+      "title": "Data Backup and Disaster Recovery Assistant",
+      "summary": "The IT Coordinator oversees data backup processes and ensures that appropriate disaster recovery plans are in place. They regularly test backup systems and implement measures to safeguard data integrity and availability."
+    },
+    {
+      "title": "IT Budgeting and Asset Management",
+      "summary": "The IT Coordinator assists in budget planning and forecasting for IT initiatives. They also manage IT assets, including inventory management, software licenses, and equipment procurement."
+    },
+    {
+      "title": "IT Documentation",
+      "summary": "They maintain accurate documentation of IT systems, configurations, procedures, and user guides. This includes creating technical documentation, knowledge base articles, and FAQs for troubleshooting purposes."
+    },
+    {
+      "title": "Security and Compliance",
+      "summary": "They collaborate with the IT security team to implement security measures and monitor network and system vulnerabilities. They stay updated on the latest security threats, conduct risk assessments, and ensure compliance with industry standards and regulations."
+    }
+  ]
+}
