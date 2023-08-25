@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Finance Coordinator",
+    "summary": "The role of a Finance Coordinator in a Non-Government Organization (NGO) is critical to ensuring the smooth financial operations and compliance with funding regulations. A Finance Coordinator in an NGO must be detail-oriented, analytical, and knowledgeable about financial management practices. They should also possess strong communication skills to work effectively with various stakeholders within and outside the organization. It is a Permanent-Type Position.",
+    "category": "NGO Role"
+  },
+  {
+    "title": "Roles",
+    "summary": "Financial Planning and Budgeting, Expense Management, Audit and Compliance, Financial Controls, Financial Planning and Forecasting, Training and Capacity Building, Grant Proposal Support.",
+    "category": "Responsibilities"
+  },
+  {
+    "title": "Responsibilities",
+    "category": "Responsibilities",
+    "subsections": [
+      {
+        "title": "Financial Planning and Budgeting",
+        "content": "Collaborate with the management team to develop and implement the organization's financial plans and annual budgets. Monitor budget adherence and provide regular reports on financial performance."
+      },
+      {
+        "title": "Financial Reporting",
+        "content": "Prepare timely and accurate financial reports, including income statements, balance sheets, and cash flow statements. Present financial data to management and other stakeholders as required."
+      },
+      {
+        "title": "Grants and Funding Management",
+        "content": "Oversee the financial aspects of grants and funding received by the NGO. Ensure compliance with funding requirements and reporting guidelines set by donors."
+      },
+      {
+        "title": "Expense Management",
+        "content": "Monitor and control expenses to ensure efficient use of resources. Review and approve expenditures, ensuring they align with the approved budget and are supported by proper documentation."
+      },
+      {
+        "title": "Bookkeeping and Accounting",
+        "content": "Maintain accurate financial records, including transactions, receipts, and invoices. Ensure all financial activities are recorded in the accounting system in a timely manner."
+      },
+      {
+        "title": "Audit and Compliance",
+        "content": "Coordinate with auditors during the annual financial audit and implement necessary adjustments based on audit findings. Ensure compliance with relevant financial and tax regulations."
+      },
+      {
+        "title": "Financial Controls",
+        "content": "Establish and maintain internal financial controls to safeguard the NGO's assets and prevent fraud or misuse of funds."
+      },
+      {
+        "title": "Donor and Stakeholder Communication",
+        "content": "Act as a point of contact for financial-related queries from donors, board members, and other stakeholders. Provide financial updates and reports as required."
+      },
+      {
+        "title": "Financial Planning and Forecasting",
+        "content": "Collaborate with program managers to support financial planning for new projects and initiatives. Conduct financial forecasting to assist with resource allocation decisions."
+      },
+      {
+        "title": "Financial Policy Development",
+        "content": "Develop and implement financial policies and procedures to improve the efficiency and effectiveness of financial operations."
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "title": "Additional Responsibilities",
+  "category": "Responsibilities",
+  "subsections": [
+    {
+      "title": "Vendor Management",
+      "summary": "They coordinate and manage relationships with external IT vendors or service providers. This includes negotiating contracts, evaluating vendor performance, and ensuring timely delivery of services or products."
+    },
+    {
+      "title": "System Upgrades and Maintenance",
+      "summary": "They plan and coordinate system upgrades, software patches, and maintenance activities. This involves scheduling downtime, communicating with users about disruptions, and ensuring minimal impact on operations."
+    }
+  ]
+}
